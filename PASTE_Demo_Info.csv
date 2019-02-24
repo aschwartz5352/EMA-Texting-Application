@@ -1,0 +1,12 @@
+﻿Subject ID #,Participants Names,Email,Phone #,Typical Wake Time,Time of Texts & Survey to be sent with text,,,,,,Typical Bed Time
+,,,,,Text 1 (Survey A),Text 2 (Survey A),Text 3 (Survey A),Text 4 (Survey A),Text 5 (Survey A),Text 6 (Survey B),
+Demo_001,Natalie Saeger,nsaeger2@illinois.edu,630-631-4131,6:40am,7:40am,10:40am,1:40pm,4:40pm,7:40pm,10:40pm,11:30pm
+Demo_002,Claire Niewiara,cn2@illinois.edu,630-441-3867,8:00am,9:00am,12:00pm,3:00pm,6:00pm,8:30pm,10:30pm,11pm - midnight
+Demo_003,Bri Oldenburg,bno2@illinois.edu,309-706-9098,7:00am,8:00am,11:00am,2:00pm,5:00pm,8:00pm,10:00pm,11pm  
+,,,,,,,,,,,
+,,,,,Info for Texts,,,,,,
+,,,,,Dates of Texts,,Survey,Links,,,
+,,,,,"Mon., March 4th",,"A 
+(5x/day)",https://goo.gl/forms/EqrRv2KAUDq9ykXo1,,,
+,,,,,"Tues., March 5th",,B: Daily Summary (end of day),https://goo.gl/forms/2LIq5vbGNOY6SML02,,,
+,,,,,"Wed., March 6th",,,,,,
