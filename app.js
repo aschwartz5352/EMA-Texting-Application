@@ -1,14 +1,17 @@
 var express = require('express');
+CronJob = require('cron').CronJob;
+const csv=require('csvtojson')
+const twilio = require('twilio');
+// const clientProperties = require('properties.js');
+
+
 var app = express();
 
 const twilioNumber = '+12244123742' // your twilio phone number
-const twilio = require('twilio');
 const client = new twilio("AC6b566320e0a313e3a43da87a52c5865d", "8eccfacc557e51d1cce159ddc6ab63ba");
+ 
 
 
-CronJob = require('cron').CronJob;
-
-const csv=require('csvtojson')
 
 // "+14844647473"
 
@@ -76,13 +79,13 @@ function validateExcelColumns(columns){
   return foundKeys.length == neededKeys.length;
 }
 
-
+//Creates cronJon to send
 function createCron(person, surveyDesc, surveyLink){
   console.log(person[surveyDesc]);
-  // var c = new CronJob(person[surveyDesc], function() {
-  //   console.log(`Sending ${surveyDesc} to ${person['Participants Names']}` );
-  //   sendMessage(person['Phone #'], person['Participants Names'] + " : " + surveyLink);
-  // }, null, true);
+  var c = new CronJob(person[surveyDesc], function() {
+    console.log(`Sending ${surveyDesc} to ${person['Participants Names']}` );
+    // sendMessage(person['Phone #'], person['Participants Names'] + " : " + surveyLink);
+  }, null, true);
 }
 
 //converts time format 'HH:MM' -> 'MM 24HH * * *''
